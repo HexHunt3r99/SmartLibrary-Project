@@ -6,9 +6,9 @@ import java.sql.SQLException;
 
 public class DBConnection {
     
-    private static final String DB_URL = "jdbc:postgresql://localhost:5432/smartlibrary";
-    private static final String DB_USER = "postgres";
-    private static final String DB_PASS = "admin";
+    private static final String DB_URL = "jdbc:postgresql://ep-odd-truth-anwxhxc8-pooler.c-6.us-east-1.aws.neon.tech/neondb?sslmode=require";
+    private static final String DB_USER = "neondb_owner";
+    private static final String DB_PASS = "npg_JvNTL0w8SVjO";
     
     public static Connection getConnection() {
         Connection conn = null;
