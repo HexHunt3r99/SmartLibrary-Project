@@ -1,0 +1,26 @@
+# Git
+.git
+.gitignore
+
+# IDE
+.idea
+.vscode
+*.iml
+.settings
+.project
+.classpath
+
+# Build outputs (will be generated in Docker)
+target/
+*.war
+*.class
+WEB-INF/classes/
+
+# OS files
+.DS_Store
+Thumbs.db
+*.tmp
+
+# Logs
+*.log
+logs/
