@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+         http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0">
+
+    <session-config>
+        <session-timeout>30</session-timeout>
+    </session-config>
+
+    <error-page>
+        <error-code>404</error-code>
+        <location>/error404.jsp</location>
+    </error-page>
+    <error-page>
+        <error-code>500</error-code>
+        <location>/error500.jsp</location>
+    </error-page>
+
+    <servlet>
+        <servlet-name>LoginServlet</servlet-name>
+        <servlet-class>com.smartlibrary.controller.LoginServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LoginServlet</servlet-name>
+        <url-pattern>/LoginServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>RegisterServlet</servlet-name>
+        <servlet-class>com.smartlibrary.controller.RegisterServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>RegisterServlet</servlet-name>
+        <url-pattern>/RegisterServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>AdminStats</servlet-name>
+        <servlet-class>com.smartlibrary.controller.AdminStatsServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AdminStats</servlet-name>
+        <url-pattern>/AdminStats</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>CategoryStatsServlet</servlet-name>
+        <servlet-class>com.smartlibrary.controller.CategoryStatsServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CategoryStatsServlet</servlet-name>
+        <url-pattern>/CategoryStatsServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>BorrowTrends</servlet-name>
+        <servlet-class>com.smartlibrary.controller.BorrowTrendsServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>BorrowTrends</servlet-name>
+        <url-pattern>/BorrowTrends</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>UserStats</servlet-name>
+        <servlet-class>com.smartlibrary.controller.UserStatsServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UserStats</servlet-name>
+        <url-pattern>/UserStats</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>BookServlet</servlet-name>
+        <servlet-class>com.smartlibrary.controller.BookServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>BookServlet</servlet-name>
+        <url-pattern>/BookServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>AddBook</servlet-name>
+        <servlet-class>com.smartlibrary.controller.AddBookServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AddBook</servlet-name>
+        <url-pattern>/AddBook</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>BorrowBook</servlet-name>
+        <servlet-class>com.smartlibrary.controller.BorrowBookServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>BorrowBook</servlet-name>
+        <url-pattern>/BorrowBook</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>UserServlet</servlet-name>
+        <servlet-class>com.smartlibrary.controller.UserServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UserServlet</servlet-name>
+        <url-pattern>/UserServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>CategoryServlet</servlet-name>
+        <servlet-class>com.smartlibrary.controller.CategoryServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CategoryServlet</servlet-name>
+        <url-pattern>/CategoryServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>LogoutServlet</servlet-name>
+        <servlet-class>com.smartlibrary.controller.LogoutServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LogoutServlet</servlet-name>
+        <url-pattern>/Logout</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>RenewBook</servlet-name>
+        <servlet-class>com.smartlibrary.controller.RenewBookServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>RenewBook</servlet-name>
+        <url-pattern>/RenewBook</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ProfileServlet</servlet-name>
+        <servlet-class>com.smartlibrary.controller.ProfileServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ProfileServlet</servlet-name>
+        <url-pattern>/ProfileServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ReserveBook</servlet-name>
+        <servlet-class>com.smartlibrary.controller.ReserveBookServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ReserveBook</servlet-name>
+        <url-pattern>/ReserveBook</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>FineServlet</servlet-name>
+        <servlet-class>com.smartlibrary.controller.FineServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>FineServlet</servlet-name>
+        <url-pattern>/FineServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>AdminFines</servlet-name>
+        <servlet-class>com.smartlibrary.controller.AdminFinesServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AdminFines</servlet-name>
+        <url-pattern>/AdminFines</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>AdminReservations</servlet-name>
+        <servlet-class>com.smartlibrary.controller.AdminReservationsServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AdminReservations</servlet-name>
+        <url-pattern>/AdminReservations</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>AdminBorrows</servlet-name>
+        <servlet-class>com.smartlibrary.controller.AdminBorrowsServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AdminBorrows</servlet-name>
+        <url-pattern>/AdminBorrows</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>RecentActivity</servlet-name>
+        <servlet-class>com.smartlibrary.controller.RecentActivityServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>RecentActivity</servlet-name>
+        <url-pattern>/RecentActivity</url-pattern>
+    </servlet-mapping>
+
+    <welcome-file-list>
+        <welcome-file>index.jsp</welcome-file>
+    </welcome-file-list>
+
+</web-app>

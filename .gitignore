@@ -1,0 +1,130 @@
+# Java compiled classes
+*.class
+**/*.class
+
+# Compiled output directories
+**/WEB-INF/classes/
+**/build/
+**/out/
+**/bin/
+**/target/
+**/dist/
+
+# Package files
+*.jar
+*.war
+*.ear
+*.sar
+*.nar
+
+# Maven
+**/target/
+**/pom.xml.tag
+**/pom.xml.releaseBackup
+**/pom.xml.versionsBackup
+**/pom.xml.next
+**/release.properties
+**/dependency-reduced-pom.xml
+**/mvnw
+**/mvnw.cmd
+**/.mvn/
+
+# Gradle
+**/.gradle/
+**/build/
+**/gradlew
+**/gradlew.bat
+**/gradle-wrapper.jar
+
+# IDE files
+**/.idea/
+**/*.iml
+**/.settings/
+**/.project
+**/.classpath
+**/.factorypath
+**/.metadata/
+**/nbproject/
+**/.vscode/
+**/*.ipr
+**/*.iws
+
+# OS files
+**/Thumbs.db
+**/ehthumbs.db
+**/Desktop.ini
+**/.DS_Store
+**/.AppleDouble
+**/.LSOverride
+**/__MACOSX/
+
+# Log files
+**/*.log
+**/logs/
+**/catalina.out
+**/localhost.*.log
+**/manager.*.log
+**/host-manager.*.log
+
+# Temporary files
+**/tmp/
+**/temp/
+**/*.tmp
+**/~$*
+**/._*
+**/.cache/
+
+# Database files (if using embedded DB)
+**/*.db
+**/*.sqlite
+**/*.h2.db
+**/*.mv.db
+
+# Tomcat specific
+**/work/
+**/conf/
+**/logs/
+**/temp/
+
+# NetBeans specific
+**/nbproject/private/
+**/build/
+**/nbbuild/
+**/dist/
+**/nbdist/
+**/.nb-gradle/
+
+# Eclipse specific
+**/.eclipse/
+**/servers/
+**/metadata/
+
+# Backup files
+**/*~
+**/*.bak
+**/*.backup
+**/*.swp
+**/*.swo
+
+# Test reports
+**/test-results/
+**/surefire-reports/
+**/failsafe-reports/
+
+# Documentation generated
+**/docs/api/
+**/javadoc/
+
+# Node modules (if you add frontend tools later)
+**/node_modules/
+**/package-lock.json
+**/yarn.lock
+
+# Environment files
+**/.env
+**/.env.local
+**/.env.*.local
+
+# Custom excludes for this project
+**/nul
+**/META-INF/maven/
