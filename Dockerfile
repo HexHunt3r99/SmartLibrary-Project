@@ -1,10 +1,11 @@
 # ============================================
 # SmartLibrary Dockerfile - Fixed & Detailed
 # ============================================
-# Fixes applied:
-# 1. Downloads JARs via wget (local lib/ is gitignored via *.jar in .gitignore)
+# Setup:
+# 1. All JARs in lib/ folder (included in Git via .gitignore exception)
 # 2. Supports Railway's dynamic $PORT environment variable
 # 3. Multi-stage build (small final image)
+# 4. Works offline (no wget needed)
 # ============================================
 
 # ====================
@@ -17,8 +18,7 @@ WORKDIR /build
 # Copy Java source files
 COPY src/main/java ./src
 
-# Copy JAR dependencies from your local lib folder
-# Now tracked by Git after updating .gitignore
+# Copy local JAR dependencies (PostgreSQL + checker-qual + Jakarta Servlet API)
 COPY webapps/SmartLibrary/WEB-INF/lib ./lib
 
 # Compile all Java files (20 servlets + 3 util classes)
