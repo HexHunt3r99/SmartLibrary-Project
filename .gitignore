@@ -11,11 +11,11 @@
 **/dist/
 
 # Package files
-*.jar
 *.war
 *.ear
 *.sar
 *.nar
+!webapps/SmartLibrary/WEB-INF/lib/*.jar
 
 # Maven
 **/target/
